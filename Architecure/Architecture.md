@@ -4,12 +4,12 @@
 https://github.com/Abhishek-7400/Terraform/blob/e5079128010bc75c80e9d04b685a8256617b321c/Architecure/terraform-architecture-diagram.png
 ```
 
-### Terraform architecture mainly consists of the following components:
-Terraform Core
-Configure file
-Providers
-State file
-Backend
+## Terraform architecture mainly consists of the following components:
+### Terraform Core
+### Configure file
+### Providers
+### State file
+### Backend
 
 ### 1. Terraform Core
 Terraform’s core (also known as Terraform CLI) is built on a statically-compiled binary that’s developed using the Go programming language.
