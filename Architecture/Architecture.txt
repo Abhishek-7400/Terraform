@@ -1,0 +1,19 @@
+Architecture of Terraform
+Terraform architecture mainly consists of the following components:
+>Terraform Core
+>Providers
+>State file
+#In image you can see the Architecture of the terrform.
+1. Terraform Core
+Terraform’s core (also known as Terraform CLI) is built on a statically-compiled binary that’s developed using the Go programming language.
+
+
+Providers
+Terraform providers are modules that enable Terraform to communicate with a diverse range of services and resources, including but not limited to cloud providers, databases, and DNS services. 
+
+Each provider is responsible for defining the resources that Terraform can manage within a particular service and translating Terraform configurations into API calls that are specific to that service.
+
+Providers are available for numerous services and resources, including those developed by major cloud providers like AWS, Azure, and Google Cloud, as well as community-supported providers for various services. By utilizing providers, Terraform users can maintain their infrastructure in a consistent and reproducible manner, regardless of the underlying service or provider. 
+
+State file
+The Terraform state file is an essential aspect of Terraform’s functionality. It is a JSON file that stores information about the resources that Terraform manages, as well as their current state and dependencies.
