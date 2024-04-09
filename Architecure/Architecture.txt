@@ -1,7 +1,9 @@
-Architecture of Terraform
+## Architecture
+
 ```
-Architecure/terraform-architecture-diagram.png 
+Architecure/terraform-architecture-diagram.png
 ```
+
 Terraform architecture mainly consists of the following components:
 Terraform Core
 Configure file
