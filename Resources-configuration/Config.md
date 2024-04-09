@@ -69,3 +69,12 @@ variable "ami_id" {
   description = "The ID of the Amazon Machine Image (AMI) to use for the EC2 instance."
 }
 ```
+variable: This keyword indicates that you're defining a variable block.
+
+"variable_name": This is the name of the variable you're defining. It's used to reference the variable within your Terraform configuration.
+
+type: This attribute specifies the data type of the variable, such as string, number, list, map, bool, etc. It defines the kind of values that can be assigned to the variable.
+
+default: This attribute specifies a default value for the variable. If no value is provided when running Terraform, it will use this default value. This attribute is optional.
+
+description: This attribute provides a description of the variable, explaining its purpose or usage. While optional, providing descriptions can improve the clarity and maintainability of your code, especially for shared configurations.
