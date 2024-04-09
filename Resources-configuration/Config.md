@@ -26,6 +26,16 @@ resource "aws_instance" "example_instance" {
   }
 }
 ```
+resource "aws_instance" "example_instance": Defines an EC2 instance resource with the name "example_instance".
+
+ami = "ami-0c55b159cbfafe1f0": Specifies the Amazon Machine Image (AMI) to use for the instance.
+
+instance_type = "t2.micro": Specifies the instance type (e.g., t2.micro) for the EC2 instance.
+
+tags = { Name = "example-instance" }: Adds a tag to the instance with the key Name and the value "example-instance".
+
+Once you define a resource block in your Terraform configuration, you can use Terraform commands like ```terraform plan``` and ```terraform apply``` to create or modify the corresponding resource in your infrastructure.
+
 # For Data Block
 In Terraform, a data block is used to retrieve and reference information from remote data sources, such as existing infrastructure components or external systems, without actually creating or managing those resources. Data blocks allow you to query information from external sources and use that data within your Terraform configuration.
 ## Here's the basic syntax of a data block:
@@ -46,6 +56,14 @@ data "aws_ami" "example_ami" {
   }
 }
 ```
+data "aws_ami" "example_ami": Defines a data source block for querying AWS AMIs with the name "example_ami".
+
+most_recent = true: Specifies that you want to retrieve the most recent AMI that matches the specified criteria.
+
+owners = ["amazon"]: Specifies that you want to retrieve AMIs owned by the AWS account with the ID "amazon".
+
+filter: Defines a filter for the query, specifying the name and values to filter AMIs by. In this case, it filters by AMI names that match the specified pattern.
+
 # For Variable Block
 In Terraform, a variable block is used to declare input variables within your configuration. Variables allow you to parameterize your Terraform code, making it more flexible and reusable across different environments or scenarios. You can define variables for values that may vary between deployments, such as IP addresses, instance types, or resource names.
 ## Here's the basic syntax of a variable block:
