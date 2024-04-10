@@ -28,9 +28,9 @@ resource "aws_instance" "terraform_instance" {
 ```
 terraform init
 ```
-# to plane
+# to plan
 ```
-terraform Plnae
+terraform Plan
 ```
 # to apply
 ```
