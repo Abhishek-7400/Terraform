@@ -13,7 +13,7 @@ https://developer.hashicorp.com/terraform/install#linux
     HostName Public_ip of Instance
     User Username
     IdentityFile /.pem file path
-'''
+```
 3. save it and click on a left side icon ```><``` .
 4. select the username and platform type(ubuntu) and Continue.
 sudo snap install code --classic
