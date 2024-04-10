@@ -6,4 +6,4 @@ https://developer.hashicorp.com/terraform/install#linux
 ```
 sudo snap install code --classic
 ```
-after installation of code got the directory and rund ```code . ```
+## after installation of code go to the directory and run ```code . ```
