@@ -9,7 +9,8 @@ https://developer.hashicorp.com/terraform/install#linux
 # How to set and connect terraform SSH with Ec2 instance
 1. Go to remote explore and select Remote SSH
 2. edit setting select first config path and ADD 
-``` Host public_ip of Instance
+```
+Host public_ip of Instance
     HostName Public_ip of Instance
     User Username
     IdentityFile /.pem file path
