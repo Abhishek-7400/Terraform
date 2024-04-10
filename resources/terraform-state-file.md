@@ -15,8 +15,9 @@ terraform {
 }
 
 provider "aws" {
-  region     = "ap-south-1"
-  
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
 }
 ```
 ## code (store in Bakend s3 Bucket)
@@ -30,8 +31,9 @@ terraform {
 }
 
 provider "aws" {
-  region     = "ap-south-1"
-  
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
 }
 ```
 ## here bucket name is mention "mybucket" and file (key) "terraform.tfstate
