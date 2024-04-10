@@ -17,6 +17,6 @@ Host public_ip of Instance
 ```
 3. save it and click on a left side icon ```><``` .
 4. select the username and platform type(ubuntu) and Continue.
-sudo snap install code --classic
+
 
 
