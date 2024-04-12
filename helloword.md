@@ -12,10 +12,10 @@ value = "hello word"
 }
 
 ```
+### run command terraform plan
 ## output
 ```
 Changes to Outputs:
   + hello = "hello Word"
 ```
-### run command terraform plan
 
