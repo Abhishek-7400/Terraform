@@ -18,4 +18,5 @@ value = "hello word"
 Changes to Outputs:
   + hello = "hello Word"
 ```
-
+# Terraform run the all the file present in the same direction in alphabatical order of the file.
+## if in folder 3 file are there the terraform run all three files.
