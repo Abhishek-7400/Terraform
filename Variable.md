@@ -39,8 +39,8 @@ var.username
 Changes to Outputs:
   + my_details = " my name is 'Abhishek' and my age is '23' "
 ```
-# We can give variable value from command line (-var "variablename=value")
-## it will not ask user input and directly print the value 
+# We can give variable value from command line (-var "variablename=value").
+## it will not ask user input and directly print the value.
 ### example
 ```
 variable username {}
@@ -57,7 +57,7 @@ Changes to Outputs:
   + my_details = " my name is 'Abhishek' and my age is '23' "
 ```
 # How to set default value to Variable
-It will not asked to define value of variable from input
+It will not asked to define the value of variable from input.
 ## Example
 ```
 variable username {
