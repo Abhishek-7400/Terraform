@@ -17,4 +17,5 @@ value = "hello word"
 Changes to Outputs:
   + hello = "hello Word"
 ```
+### run command terraform plan
 
