@@ -22,7 +22,6 @@ var.username
 Changes to Outputs:
   + myname = "Abhishek"
 ```
-```
 # Adding variable with string ``` '${var.varable_name)' ```
 ## example
 ```
