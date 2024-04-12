@@ -38,7 +38,7 @@ var.username
 Changes to Outputs:
   + myname = "hi my name is 'Abhishek' "
 ```
-# We can give variable value from command line ( -var "variablename=value )
+# We can give variable value from command line (-var "variablename=value")
 ## it will not ask user input and directly print the value 
 ### example
 ```
