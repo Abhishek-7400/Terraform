@@ -24,6 +24,10 @@ resource "aws_instance" "terraform_instance" {
   }
 }
 ```
+# to Check provider which one using
+```
+terraform providers
+```
 # to initiate
 ```
 terraform init
