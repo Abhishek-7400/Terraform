@@ -30,6 +30,26 @@ variable users {
   default     = ["a","b","c"]
 }
 ```
+## Example
+```
+variable users {
+  type = list
+  default = ["a","b"]
+}
+output detali1{
+  value = "my first user is ${var.users[0]}"
+}
+output detali2{
+  value = "my second user is ${var.users[1]}"
+}
+```
+### output
+```
+Changes to Outputs:
+  + detali1 = "my first user is a"
+  + detali2 = "my second user is b"
+```
+
 # Map (directory)
 ```
 variable "tags" {
