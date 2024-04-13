@@ -32,6 +32,11 @@ terraform providers
 ```
 terraform init
 ```
+# to validate the syntax of Terraform configuration files
+```
+terrform validate
+```
+
 # to plan
 ```
 terraform Plan
