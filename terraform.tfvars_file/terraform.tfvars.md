@@ -13,5 +13,17 @@ output detail{
 }
 ```
 ### Output
+```
 Changes to Outputs:
   + detail = "my name is Abhishek and my age is 23."
+```
+## Example (Using customize detail.tfvars file)
+### ON command line just enter
+```
+terraform plan -var-file=detail.tfvars
+```
+### output
+```
+Changes to Outputs:
+  + detail = "my name is Ravi and my age is 23."
+```
