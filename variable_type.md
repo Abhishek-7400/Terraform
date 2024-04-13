@@ -42,6 +42,31 @@ variable "tags" {
   }
 }
 ```
+## example ( we use function lookup(map_name,key_value}
+```
+variable map {
+  type = map
+  default = {
+    gaurav=23
+    abhishek=43
+  }
+}
+
+variable name{
+  type = string
+}
+
+
+output detali{
+  value = "my name is ${var.name} and my age is ${lookup(var.map,"${var.name}")}" 
+}
+```
+### output
+var.name
+  Enter a value: abhishek
+Changes to Outputs:
+  + detali = "my name is abhishek and my age is 43"
+
 # Object
 ```
 variable "instance_config" {
