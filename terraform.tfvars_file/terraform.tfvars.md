@@ -1,4 +1,4 @@
-# In Terraform, a .tfvars file is used to store variable values separately from the main configuration files. 
+# In Terraform, a .tfvars file is used to store variable values separately from the main configuration files.File Should be present in same directory.
 # This allows you to keep sensitive or environment-specific information out of your main Terraform files, making your configurations more modular and easier to manage across different environments.
 ## Example (using default terraform.tfvars file)
 ```
