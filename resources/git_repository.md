@@ -41,8 +41,10 @@ full_reponame = "Abhishek-7400/First-terraform-githu-repo"
 rep_url = "https://github.com/Abhishek-7400/First-terraform-githu-repo"
 ```
 # OR we cane use ``` terraform console ``` to open interactive console to get.
-## 1st use ``` terraform console ```
-## 2nd use ``` github_repository.terraform-github-repo.html_url ```
+## 1st use 
+``` terraform console ```
+## 2nd use
+``` github_repository.terraform-github-repo.html_url ```
 ### o/p
 ```
  "https://github.com/Abhishek-7400/First-terraform-githu-repo
