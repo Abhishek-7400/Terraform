@@ -13,7 +13,7 @@ resource "github_repository" "terraform-github-repo" {
   auto_init = true
 }
 ```
-# If wanted to print somthing during Plan or Execution used output (got to Attributes Reference )
+# If wanted to print somthing during Plan or Execution use output (got to Attributes Reference )
 ```
 ```
 provider "github" {
