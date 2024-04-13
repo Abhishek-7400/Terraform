@@ -44,3 +44,8 @@ terraform apply
 ```
 terraform destroy
 ```
+# to destory particular resource
+```
+terraform destroy --target resource_type.resource_name
+```
+
