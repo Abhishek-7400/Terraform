@@ -62,10 +62,12 @@ output detali{
 }
 ```
 ### output
+```
 var.name
   Enter a value: abhishek
 Changes to Outputs:
   + detali = "my name is abhishek and my age is 43"
+```
 
 # Object
 ```
