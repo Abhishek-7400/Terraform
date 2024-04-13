@@ -53,4 +53,8 @@ terraform destroy
 ```
 terraform destroy --target resource_type.resource_name
 ```
+# to opens an interactive console where you can evaluate expressions and functions directly within the context of your Terraform configuration
+```
+terraform console
+```
 
