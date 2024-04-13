@@ -14,7 +14,7 @@ resource "github_repository" "terraform-github-repo" {
 }
 ```
 # If wanted to print somthing during Plan or Execution use output (got to Attributes Reference )
-```
+
 ```
 provider "github" {
     token = ""
