@@ -2,7 +2,7 @@
 ```
 terraform providers
 ```
-# to initiate
+# to initiate Plugins
 ```
 terraform init
 ```
