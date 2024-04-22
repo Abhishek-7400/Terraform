@@ -62,7 +62,7 @@ variable "tags" {
   }
 }
 ```
-## example ( we use function lookup(map_name,key_value}
+## example ( we use function lookup(map_name,key_value) to use the key from map )
 ```
 variable map {
   type = map
