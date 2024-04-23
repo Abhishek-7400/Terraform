@@ -4,10 +4,13 @@
 ## cidr_blocks we define ip address who can access.
 ```
 provider "aws" {
-  region = "us-west-2"  # Change to your desired region
+  region     = "ap-south-1"
+  access_key = " "
+  secret_key = "  "
+
 }
 
-resource "aws_security_group" "example" {
+resource "aws_security_group" "security_group_example" {
   name        = "example-security-group"
   description = "Example security group for Terraform"
   ingress {
@@ -28,4 +31,8 @@ resource "aws_security_group" "example" {
     protocol    = "tcp"  
     cidr_blocks = ["0.0.0.0/0"]
   }
+ tags = {
+    Name = "terraform_security_group"
+  }
 }
+```
