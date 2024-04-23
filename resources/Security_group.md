@@ -63,6 +63,11 @@ resource "aws_security_group" "security_group_example" {
   }
 }
 ```
-
-
+## If we wanted to print ID of the security group
+### In code we can define output and print it or we can print using terraform console
+```
+output security_id{
+value = "${aws_security_group.security_group_example.id}"
 }
+```
+
