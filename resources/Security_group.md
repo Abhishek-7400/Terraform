@@ -71,6 +71,7 @@ value = "${aws_security_group.security_group_example.id}"
 }
 ```
 # Assigning or creating EC2 instance using Security Group.
+## NOTE : If you are creating Instances in a VPC, use vpc_security_group_ids instead of security_groups.
 ```
 provider "aws" {
   region     = "ap-south-1"
@@ -95,4 +96,15 @@ resource "aws_security_group" "security_group_example" {
     Name = "terraform_security_group-2"
   }
 
+resource "aws_instance" "terraform_instance" {
+  ami           = "ami-007020fd9c84e18c7"
+  instance_type = "t2.micro"
+  key_name = "terraform"
+  vpc_security_group_ids = ["${aws_security_group.security_group_example.id}"]
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
+```
 
