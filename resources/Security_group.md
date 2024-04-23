@@ -70,4 +70,29 @@ output security_id{
 value = "${aws_security_group.security_group_example.id}"
 }
 ```
+# Assigning or creating EC2 instance using Security Group.
+```
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = " "
+  secret_key = "  "
+}
+
+resource "aws_security_group" "security_group_example" {
+  name        = "example-security-group-1"
+  description = "Example security group for Terraform"
+
+ dynamic "ingress" {
+    for_each = [22,80,443]
+     iterator = port
+    content {
+      from_port   = port.value
+      to_port     = port.value
+      protocol    = "tcp" 
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+ tags = {
+    Name = "terraform_security_group-2"
+  }
+
 
