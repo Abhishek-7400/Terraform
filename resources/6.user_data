@@ -1,5 +1,20 @@
 # In AWS, user data is a feature that allows you to pass initialization scripts or configuration commands to your EC2 instances when they are launched. This allows you to automate the setup and configuration of your instances without manual intervention
 ## How to define in terraform
 ```
+resource "aws_instance" "terraform_instance" {
+  ami           = "ami-007020fd9c84e18c7"
+  instance_type = "t2.micro"
+  key_name = "terraform"
 
+  user_data = <<-EOF
+    #!/bin/bash
+    sudo apt-get update
+    sudo apt-get install nginx -y
+    echo "Welcome Abhishek" > /var/www/html/index_debian.html
+    
+  EOF
+tags = {
+    Name = "HelloWorld"
+  }
+}
 ```
