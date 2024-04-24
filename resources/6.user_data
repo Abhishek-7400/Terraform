@@ -39,3 +39,12 @@ tags = {
   }
 }
 ```
+### or We can create script .sh file in same path or directory and use in user_data by using file("${path.module}/.sh file_name")
+# file.sh
+```
+    #!/bin/bash
+    sudo apt-get update
+    sudo apt-get install nginx -y
+    echo "Welcome Abhishek" > /var/www/html/index_debian.html
+```
+# in 
