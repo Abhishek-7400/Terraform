@@ -2,6 +2,10 @@
 ```
 terraform providers
 ```
+# to applies a standard formatting to your .tf files, adjusting indentation, spacing, and other formatting rules.
+```
+terraform fmt
+```
 # to initiate Plugins
 ```
 terraform init
@@ -19,9 +23,18 @@ terraform Plan
 ```
 terraform apply
 ```
+## or
+```
+terrform apply
+``` --auto-approve
+
 # to destroy
 ```
 terraform destroy
+```
+## or
+```
+terrform destroy --auto-approve
 ```
 # to destory particular resource
 ```
@@ -31,7 +44,7 @@ terraform destroy --target resource_type.resource_name
 ```
 terraform console
 ```
-# to applies a standard formatting to your .tf files, adjusting indentation, spacing, and other formatting rules.
+# When a resource is tainted, Terraform will consider it as needing to be destroyed and recreated on the next apply, even if there are no changes to its configuration.
 ```
-terraform fmt
+terraform taint [options] RESOURCE_TYPE.RESOURCE_NAME
 ```
