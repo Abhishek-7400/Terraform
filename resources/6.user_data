@@ -1,6 +1,12 @@
 # In AWS, user data is a feature that allows you to pass initialization scripts or configuration commands to your EC2 instances when they are launched. This allows you to automate the setup and configuration of your instances without manual intervention
 ## How to define in terraform
 ```
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = "\"
+  secret_key = ""
+
+}
 resource "aws_security_group" "security_group_example" {
   name        = "example-security-group-1"
   description = "Example security group for Terraform"
@@ -17,6 +23,7 @@ resource "aws_security_group" "security_group_example" {
 resource "aws_instance" "terraform_instance" {
   ami           = "ami-007020fd9c84e18c7"
   instance_type = "t2.micro"
+  vpc_security_group_ids = ["${aws_security_group.security_group_example.id}"]
   key_name = "terraform"
 
   user_data = <<-EOF
