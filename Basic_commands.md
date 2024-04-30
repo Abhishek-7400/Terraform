@@ -54,3 +54,7 @@ terraform console
 ```
 terraform taint [options] RESOURCE_TYPE.RESOURCE_NAME
 ```
+# to check created resourses using graph
+```
+terraform graph | dot -Tpdf > details.pdf
+```
